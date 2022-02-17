@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var input = 100.0
+    @State private var inputUnit = "Farenheit"
+    @State private var outputUnit = "Celsius"
+    
+    let units = ["Celsius", "Farenheit", "Kelvin"]
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
