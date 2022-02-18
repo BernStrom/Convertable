@@ -41,6 +41,12 @@ struct ContentView: View {
                 } header: {
                     Text("Select output unit to convert")
                 }
+                
+                Section {
+                    Text(0, format: .number)
+                } header: {
+                    Text("Output amount")
+                }
             }
             .navigationTitle("TempConvert")
         }
