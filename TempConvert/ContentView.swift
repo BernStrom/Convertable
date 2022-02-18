@@ -19,6 +19,7 @@ struct ContentView: View {
             Form {
                 Section {
                     TextField("Amount", value: $input, format: .number)
+                        .keyboardType(.decimalPad)
                     
                     Picker("Input unit", selection: $inputUnit) {
                         ForEach(units, id: \.self) {
@@ -28,6 +29,17 @@ struct ContentView: View {
                     .pickerStyle(.segmented)
                 } header: {
                     Text("Input amount & unit to convert")
+                }
+                
+                Section {
+                    Picker("Output unit", selection: $outputUnit) {
+                        ForEach(units, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                } header: {
+                    Text("Select output unit to convert")
                 }
             }
             .navigationTitle("TempConvert")
