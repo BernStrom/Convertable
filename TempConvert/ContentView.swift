@@ -9,11 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var input = 100.0
-    @State private var inputUnit = "Fahrenheit"
-    @State private var outputUnit = "Celsius"
+    @State private var inputUnit = UnitTemperature.fahrenheit
+    @State private var outputUnit = UnitTemperature.celsius
     @FocusState private var inputIsFocused: Bool
     
-    let units = ["Celsius", "Fahrenheit", "Kelvin"]
+    let units: [UnitTemperature] = [.celsius, .fahrenheit, .kelvin]
+    let formatter: MeasurementFormatter
+    
+    init() {
+        formatter = MeasurementFormatter()
+        formatter.unitOptions = .providedUnit
+        formatter.unitStyle = .short
+    }
+    
+    var result: String {
+        let inputMeasurement = Measurement(value: input, unit: inputUnit)
+        let outputMeasurement = inputMeasurement.converted(to: outputUnit)
+        return formatter.string(from: outputMeasurement)
+    }
     
     var body: some View {
         NavigationView {
@@ -23,9 +36,9 @@ struct ContentView: View {
                         .keyboardType(.decimalPad)
                         .focused($inputIsFocused)
                     
-                    Picker("Input unit", selection: $inputUnit) {
+                    Picker("Convert from", selection: $inputUnit) {
                         ForEach(units, id: \.self) {
-                            Text($0)
+                            Text(formatter.string(from: $0).capitalized)
                         }
                     }
                     .pickerStyle(.segmented)
@@ -34,9 +47,9 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    Picker("Output unit", selection: $outputUnit) {
+                    Picker("Convert to", selection: $outputUnit) {
                         ForEach(units, id: \.self) {
-                            Text($0)
+                            Text(formatter.string(from: $0).capitalized)
                         }
                     }
                     .pickerStyle(.segmented)
@@ -45,9 +58,9 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    Text(0, format: .number)
+                    Text(result)
                 } header: {
-                    Text("Output amount")
+                    Text("Output result")
                 }
             }
             .navigationTitle("TempConvert")
