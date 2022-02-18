@@ -15,8 +15,23 @@ struct ContentView: View {
     let units = ["Celsius", "Farenheit", "Kelvin"]
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            Form {
+                Section {
+                    TextField("Amount", value: $input, format: .number)
+                    
+                    Picker("Input unit", selection: $inputUnit) {
+                        ForEach(units, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                } header: {
+                    Text("Input amount & unit to convert")
+                }
+            }
+            .navigationTitle("TempConvert")
+        }
     }
 }
 
