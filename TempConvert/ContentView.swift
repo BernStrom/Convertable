@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var input = 100.0
-    @State private var inputUnit = "Farenheit"
+    @State private var inputUnit = "Fahrenheit"
     @State private var outputUnit = "Celsius"
+    @FocusState private var inputIsFocused: Bool
     
-    let units = ["Celsius", "Farenheit", "Kelvin"]
+    let units = ["Celsius", "Fahrenheit", "Kelvin"]
     
     var body: some View {
         NavigationView {
@@ -20,6 +21,7 @@ struct ContentView: View {
                 Section {
                     TextField("Amount", value: $input, format: .number)
                         .keyboardType(.decimalPad)
+                        .focused($inputIsFocused)
                     
                     Picker("Input unit", selection: $inputUnit) {
                         ForEach(units, id: \.self) {
@@ -49,6 +51,15 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("TempConvert")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    
+                    Button("Done") {
+                        inputIsFocused = false
+                    }
+                }
+            }
         }
     }
 }
