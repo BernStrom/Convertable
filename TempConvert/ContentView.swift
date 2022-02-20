@@ -9,20 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var input = 100.0
-    @State private var inputUnit: Dimension = UnitTemperature.fahrenheit
-    @State private var outputUnit: Dimension = UnitTemperature.celsius
+    @State private var inputUnit: Dimension = UnitTemperature.celsius
+    @State private var outputUnit: Dimension = UnitTemperature.fahrenheit
     @State private var selectedUnits = 0
     @FocusState private var inputIsFocused: Bool
     
     let conversionTypes = ["Distance", "Mass", "Temperature", "Time"]
     let unitTypes = [
         [UnitLength.meters, UnitLength.kilometers, UnitLength.feet, UnitLength.yards, UnitLength.miles],
-        [UnitMass.grams, UnitMass.kilograms, UnitMass.ounces, UnitMass.pounds],
+        [UnitMass.grams, UnitMass.kilograms, UnitMass.ounces, UnitMass.pounds, UnitMass.stones],
         [UnitTemperature.celsius, UnitTemperature.fahrenheit, UnitTemperature.kelvin],
         [UnitDuration.hours, UnitDuration.minutes, UnitDuration.seconds]
     ]
-    let formatter: MeasurementFormatter
     
+    let formatter: MeasurementFormatter
     init() {
         formatter = MeasurementFormatter()
         formatter.unitOptions = .providedUnit
@@ -84,6 +84,11 @@ struct ContentView: View {
                         inputIsFocused = false
                     }
                 }
+            }
+            .onChange(of: selectedUnits) { newSelection in
+                let units = unitTypes[newSelection]
+                inputUnit = units[0]
+                outputUnit = units[1]
             }
         }
     }
