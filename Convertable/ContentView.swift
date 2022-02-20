@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  TempConvert
+//  Convertable
 //
 //  Created by Bern N on 2/17/22.
 //

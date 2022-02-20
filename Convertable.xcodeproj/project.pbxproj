@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D7BBF8C27BE318B00EBC78E /* TempConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7BBF8C27BE318B00EBC78E /* Convertable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convertable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7BBF8F27BE318C00EBC78E /* TempConvertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConvertApp.swift; sourceTree = "<group>"; };
 		2D7BBF9127BE318C00EBC78E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D7BBF9327BE319100EBC78E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		2D7BBF8327BE318B00EBC78E = {
 			isa = PBXGroup;
 			children = (
-				2D7BBF8E27BE318B00EBC78E /* TempConvert */,
+				2D7BBF8E27BE318B00EBC78E /* Convertable */,
 				2D7BBF8D27BE318B00EBC78E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,12 +43,12 @@
 		2D7BBF8D27BE318B00EBC78E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D7BBF8C27BE318B00EBC78E /* TempConvert.app */,
+				2D7BBF8C27BE318B00EBC78E /* Convertable.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D7BBF8E27BE318B00EBC78E /* TempConvert */ = {
+		2D7BBF8E27BE318B00EBC78E /* Convertable */ = {
 			isa = PBXGroup;
 			children = (
 				2D7BBF8F27BE318C00EBC78E /* TempConvertApp.swift */,
@@ -56,7 +56,7 @@
 				2D7BBF9327BE319100EBC78E /* Assets.xcassets */,
 				2D7BBF9527BE319100EBC78E /* Preview Content */,
 			);
-			path = TempConvert;
+			path = Convertable;
 			sourceTree = "<group>";
 		};
 		2D7BBF9527BE319100EBC78E /* Preview Content */ = {
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D7BBF8B27BE318B00EBC78E /* TempConvert */ = {
+		2D7BBF8B27BE318B00EBC78E /* Convertable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D7BBF9A27BE319100EBC78E /* Build configuration list for PBXNativeTarget "TempConvert" */;
+			buildConfigurationList = 2D7BBF9A27BE319100EBC78E /* Build configuration list for PBXNativeTarget "Convertable" */;
 			buildPhases = (
 				2D7BBF8827BE318B00EBC78E /* Sources */,
 				2D7BBF8927BE318B00EBC78E /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = TempConvert;
+			name = Convertable;
 			productName = TempConvert;
-			productReference = 2D7BBF8C27BE318B00EBC78E /* TempConvert.app */;
+			productReference = 2D7BBF8C27BE318B00EBC78E /* Convertable.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D7BBF8727BE318B00EBC78E /* Build configuration list for PBXProject "TempConvert" */;
+			buildConfigurationList = 2D7BBF8727BE318B00EBC78E /* Build configuration list for PBXProject "Convertable" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D7BBF8B27BE318B00EBC78E /* TempConvert */,
+				2D7BBF8B27BE318B00EBC78E /* Convertable */,
 			);
 		};
 /* End PBXProject section */
@@ -268,7 +268,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TempConvert/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Convertable/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -281,8 +281,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.minified.TempConvert;
-				PRODUCT_NAME = TempConvert;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.minified.Convertable;
+				PRODUCT_NAME = Convertable;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TempConvert/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Convertable/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,8 +309,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.minified.TempConvert;
-				PRODUCT_NAME = TempConvert;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.minified.Convertable;
+				PRODUCT_NAME = Convertable;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D7BBF8727BE318B00EBC78E /* Build configuration list for PBXProject "TempConvert" */ = {
+		2D7BBF8727BE318B00EBC78E /* Build configuration list for PBXProject "Convertable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D7BBF9827BE319100EBC78E /* Debug */,
@@ -329,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D7BBF9A27BE319100EBC78E /* Build configuration list for PBXNativeTarget "TempConvert" */ = {
+		2D7BBF9A27BE319100EBC78E /* Build configuration list for PBXNativeTarget "Convertable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D7BBF9B27BE319100EBC78E /* Debug */,
