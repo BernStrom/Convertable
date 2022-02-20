@@ -56,7 +56,7 @@ struct ContentView: View {
                         }
                     }
                 } header: {
-                    Text("Input amount & unit to convert")
+                    Text("Input amount & select unit to convert")
                 }
                 
                 Section {
@@ -75,7 +75,7 @@ struct ContentView: View {
                     Text("Output result")
                 }
             }
-            .navigationTitle("TempConvert")
+            .navigationTitle("Convertable")
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
                     Spacer()
