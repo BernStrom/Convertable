@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/Bernie92/Desktop/iOSDev/SwiftUI-Projects/TempConvert/TempConvert.xcodeproj">
    </FileRef>
 </Workspace>
