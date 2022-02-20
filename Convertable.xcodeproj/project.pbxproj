@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D7BBF9027BE318C00EBC78E /* TempConvertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7BBF8F27BE318C00EBC78E /* TempConvertApp.swift */; };
+		2D7BBF9027BE318C00EBC78E /* ConvertableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7BBF8F27BE318C00EBC78E /* ConvertableApp.swift */; };
 		2D7BBF9227BE318C00EBC78E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7BBF9127BE318C00EBC78E /* ContentView.swift */; };
 		2D7BBF9427BE319100EBC78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7BBF9327BE319100EBC78E /* Assets.xcassets */; };
 		2D7BBF9727BE319100EBC78E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7BBF9627BE319100EBC78E /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		2D7BBF8C27BE318B00EBC78E /* Convertable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convertable.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D7BBF8F27BE318C00EBC78E /* TempConvertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConvertApp.swift; sourceTree = "<group>"; };
+		2D7BBF8F27BE318C00EBC78E /* ConvertableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertableApp.swift; sourceTree = "<group>"; };
 		2D7BBF9127BE318C00EBC78E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D7BBF9327BE319100EBC78E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D7BBF9627BE319100EBC78E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		2D7BBF8E27BE318B00EBC78E /* Convertable */ = {
 			isa = PBXGroup;
 			children = (
-				2D7BBF8F27BE318C00EBC78E /* TempConvertApp.swift */,
+				2D7BBF8F27BE318C00EBC78E /* ConvertableApp.swift */,
 				2D7BBF9127BE318C00EBC78E /* ContentView.swift */,
 				2D7BBF9327BE319100EBC78E /* Assets.xcassets */,
 				2D7BBF9527BE319100EBC78E /* Preview Content */,
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D7BBF9227BE318C00EBC78E /* ContentView.swift in Sources */,
-				2D7BBF9027BE318C00EBC78E /* TempConvertApp.swift in Sources */,
+				2D7BBF9027BE318C00EBC78E /* ConvertableApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
