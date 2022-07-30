@@ -20,10 +20,10 @@ The app features a simple interface with a basic layout of sections, two of whic
 
 As for the available units of measurement to convert in-app, there are currently 4 different category types:
 
-**Distance** -  *meters*, *kilometers*, *feet*, *yards*, *miles*
-**Mass** - *grams*, *kilograms*, *pounds*, *ounces*, *stones*
-**Temperature** - *celsius*, *fahrenheit*, *kelvin*
-**Time** - *hours*, *minutes*, *seconds*
+* **Distance** -  *meters*, *kilometers*, *feet*, *yards*, *miles*
+* **Mass** - *grams*, *kilograms*, *pounds*, *ounces*, *stones*
+* **Temperature** - *celsius*, *fahrenheit*, *kelvin*
+* **Time** - *hours*, *minutes*, *seconds*
 
 ## Trying it yourself
 
