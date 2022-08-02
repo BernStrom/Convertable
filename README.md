@@ -25,6 +25,10 @@ As for the available units of measurement to convert in-app, there are currently
 * **Temperature** - *celsius*, *fahrenheit*, *kelvin*
 * **Time** - *hours*, *minutes*, *seconds*
 
+## App preview
+
+https://user-images.githubusercontent.com/65307853/182371675-4364a08c-a072-41d6-9bde-ab212deb2266.mp4
+
 ## Trying it yourself
 
 Convertable is written using Xcode 13.2 and Swift 5.0. To try it out, you can clone this project and build it immediately by opening `Convertable.xcodeproj`.
